@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <section className='home w-full h-screen flex flex-col justify-center items-center font-sans'>
+    <section className='home w-full h-screen flex flex-col justify-center items-center font-sans bg-gray-200'>
       <div className='flex flex-row items-center gap-6'>
         <div className='text-content max-w-2xl w-full px-8 md:px-32'>
           <h1 className='title text-8xl font-mono font-extrabold'>
