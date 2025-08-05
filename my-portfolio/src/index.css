@@ -1,2 +1,7 @@
 @import 'tailwindcss';
 @import 'tailwindcss-animated';
+
+html,
+body {
+  background-color: #f0ede5;
+}
