@@ -1,0 +1,41 @@
+@keyframes move-out {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animate letters only when hovering the parent .group */
+.group:hover .text-animation {
+  display: inline-block; /* necessary for transform */
+  animation: move-out 0.6s ease forwards;
+  animation-iteration-count: 1; /* or infinite if you want looping */
+}
+
+/* Stagger animation delays on each letter */
+.group:hover .text-animation:nth-child(1) {
+  animation-delay: 0s;
+}
+.group:hover .text-animation:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.group:hover .text-animation:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.group:hover .text-animation:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.group:hover .text-animation:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.group:hover .text-animation:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.group:hover .text-animation:nth-child(7) {
+  animation-delay: 0.6s;
+}
